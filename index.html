@@ -1,0 +1,544 @@
+ x<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLICK-SHOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="js/script.js "></script>
+  </head>
+  <body onload="myFunction()">
+    <!--NAV BAR-->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="#">CLICK-SHOP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">All Products</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="file:///C:/Users/Home/Desktop/click-shop/index.html#"><i class="bi bi-house-door-fill"></i> HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                &#128094; SHOES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item dropdown" href="#">&#128095; MEN'S SHOES</a></li>
+                <li><a class="dropdown-item" href="#">&#128096; WOMEN'S SHOES</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"><i class="icofont-boot-alt-1"></i> SPORTS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="icofont-jacket text-white"></i> T-SHIRTS
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">&#128085; MEN'S</a></li>
+                <li><a class="dropdown-item" href="#">&#128087; WOMEN'S</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">&#128118; CHILDREN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <i class="bi bi-watch text-white"></i> WATCHES
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">SPORTS</a></li>
+                <li><a class="dropdown-item" href="#">LUXURY</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">COUPLE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">CONTACT US</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit"><a class="dropdown-item" href="#">Search</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav><br><br><br>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide text-center w-100" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/model9.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-semibold">LOOKBOOK</h5>
+          <p class="fs-2">SEASON SALE 55% DISCOUNT</p>
+          <button type="button" class="center btn5 p-2 "><a class="dropdown-item" href="#">shop now</a></button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/model8.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-semibold">NEW ARRIVEL</h5>
+          <p class="fs-2 text-dark">SEASON SALE 55% DISCOUNT</p>
+          <button type="button" class="center btn p-2 "><a class="dropdown-item" href="#">shop now</a></button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/model7.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-semibold">LIMITED TIME OFFER</h5>
+          <p class="fs-2 text-dark fw-normal"> BEST COLLECTION WITH BIG SALE% </p>
+          <button type="button" class="center btn p-2 "><a class="dropdown-item" href="#">shop now</a></button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br>
+
+  <h1 class="text-center opacity-75">WHAT'S SPECIAL</h1>
+  <h2 class="text-center opacity-75">FOR TODAY?</h2><br>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm">
+        <div class="p-3  bg-light">
+          <img src="img/today1.jpg" class="today img-fluid" alt="...">
+          <hr class="s-z">
+          <h5>30% DISCOUNT</h5>   
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light">
+          <img src="img/today2.jpg" class="today img-fluid" alt="...">
+          <hr class="s-z">
+          <h5>SPECIAL OFFERS</h5>    
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light">
+          <img src="img/today3.jpg" class="today img-fluid" alt="...">
+          <hr class="s-z">
+          <h5>FREE SHIPPING</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center pt-5 fw-normal">NEW ARRIVALS</h1>
+
+  <div class="container text-center pt-4">
+    <div class="row">
+      <div class="col-sm position-relative">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/watch1.jpg" class="w-50 img-fluid" alt="watch1">
+          <span class="badge text-bg-danger position-absolute">on sale</span>
+          <p class="stars pt-3 position-absolute clickstar">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p>
+          <a href="file:///C:/Users/Home/Desktop/click-shop/index.html2.html#" class="clicklink"><button type="button" class="btn btn-outline-secondary position-absolute clickbtn">buy now</button></a>
+          <hr class="s-z">
+          <h5 class="fw-normal fs-6"> best apple watch with best price only on click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>2199</del> <i class="icofont-rupee"></i>1249</p>
+        </div>
+      </div>
+      <div class="col-sm position-relative">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/watch1.jpg" class="w-50 img-fluid" alt="watch1">
+          <p class="stars pt-3 position-absolute clickstar">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p>
+          <a href="file:///C:/Users/Home/Desktop/click-shop/index.html2.html#" class="clicklink"><button type="button" class="btn btn-outline-secondary position-absolute clickbtn">buy now</button></a>
+          <hr class="s-z">
+          <h5 class="fw-normal fs-6"> best apple watch with best price only on click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>2199</del> <i class="icofont-rupee"></i>1249</p>
+        </div>
+      </div>
+      <div class="col-sm position-relative">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/watch1.jpg" class="w-50 img-fluid" alt="watch1">
+          <p class="stars pt-3 position-absolute clickstar">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p>
+          <a href="file:///C:/Users/Home/Desktop/click-shop/index.html2.html#" class="clicklink"><button type="button" class="btn btn-outline-secondary position-absolute clickbtn">buy now</button></a>
+          <hr class="s-z">
+          <h5 class="fw-normal fs-6"> best apple watch with best price only on click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>2199</del> <i class="icofont-rupee"></i>1249</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+
+  <div class="container text-center pt-4">
+    <div class="row">
+      <div class="col-sm position-relative">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/watch1.jpg" class="w-50 img-fluid" alt="watch1">
+          <p class="stars pt-3 position-absolute clickstar">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p>
+          <a href="file:///C:/Users/Home/Desktop/click-shop/index.html2.html#" class="clicklink"><button type="button" class="btn btn-outline-secondary position-absolute clickbtn">buy now</button></a>
+          <hr class="s-z">
+          <h5 class="fw-normal fs-6"> best apple watch with best price only on click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>2199</del> <i class="icofont-rupee"></i>1249</p>
+        </div>
+      </div>
+      <div class="col-sm position-relative">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/watch1.jpg" class="w-50 img-fluid" alt="watch1">
+          <p class="stars pt-3 position-absolute clickstar">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p>
+          <a href="file:///C:/Users/Home/Desktop/click-shop/index.html2.html#" class="clicklink"><button type="button" class="btn btn-outline-secondary position-absolute clickbtn">buy now</button></a>
+          <hr class="s-z">
+          <h5 class="fw-normal fs-6"> best apple watch with best price only on click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>2199</del> <i class="icofont-rupee"></i>1249</p>
+        </div>
+      </div>
+      <div class="col-sm position-relative">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/watch1.jpg" class="w-50 img-fluid" alt="watch1">
+          <p class="stars pt-3 position-absolute clickstar">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </p>
+          <a href="file:///C:/Users/Home/Desktop/click-shop/index.html2.html#" class="clicklink"><button type="button" class="btn btn-outline-secondary position-absolute clickbtn">buy now</button></a>
+          <hr class="s-z">
+          <h5 class="fw-normal fs-6"> best apple watch with best price only on click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>2199</del> <i class="icofont-rupee"></i>1249</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  
+  <div class="text-center bgship mw-100 p-4">
+    <h1 class="text-capitalize clickship"><span class="clickfreeship">free shipping &</span> <i class="icofont-cash-on-delivery"></i></h1>
+    <p class="fw-semibold pt-4 clickship2">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+  </div><br><br><br>
+
+
+  <h3 class="text-center pt-3 fw-semibold">BEST PRODUCTS</h3><br>
+
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3  bg-light clickhover">
+          <img src="img/tshirt1.jpg" class="w-75 img-fluid" alt="watch1">
+          <hr class="s-z">
+          <button type="button" class="btn btn-outline-secondary clickbtn2 text-center"><a href="#" class="clicklink">buy now</a></button>
+          <h5 class="fw-normal fs-6">click shop</h5>
+          <p class="fw-semibold textsize"><del class="text-danger"><i class="icofont-rupee"></i>549</del> <i class="icofont-rupee"></i>399</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+
+<!--popular categories-->
+  <h2 class="text-center pt-3">popular categories</h2><br><br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm">
+        <div class="p-3 bg-light popularmenu">
+          <a href="#"><img src="img/g-shock2.jpg" class="today1 img-fluid" alt="g-shock1"></a>
+          <hr class="s-z">
+          <h5 class="type"><a href="#">G-shock watches</a></h5>   
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3 bg-light popularmenu">
+          <a href="#"><img src="img/watch1.jpg" class="today2 img-fluid" alt="watch1"></a>
+          <hr class="s-z">
+          <h5 class="type"><a href="#">apple series watches</a></h5>    
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="p-3 bg-light popularmenu">
+          <a href="#"><img src="img/airpods-pro1.jpg" class="today3 img-fluid" alt="airpodspro"></a>
+          <hr class="s-z">
+          <h5 class="type"><a href="#">airpods pro</a></h5>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br><br>
+
+<!--photos with link-->
+  <div class="container text-center mw-100">
+    <div class="row">
+      <div class="col hovercolec">
+        <a href="#"><img src="img/colec1.jpg" class="colecimg1 m-0"></a>
+      </div>
+      <div class="col hovercolec">
+        <a href="#"><img src="img/colec2.jpg" class="colecimg2 m-0"></a>
+      </div>
+      <div class="col-6 hovercolec">
+        <a href="#"><img src="img/colec3.jpg" class="colecimg3 ms-0"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center mw-100">
+    <div class="row">
+      <div class="col-6 hovercolec">
+        <a href="#"><img src="img/colec4.jpg" class="colecimg33 m-0"></a>
+      </div>
+      <div class="col hovercolec">
+        <a href="#"><img src="img/colec5.jpg" class="colecimg11 m-0"></a>
+      </div>
+      <div class="col hovercolec">
+        <a href="#"><img src="img/colec6.jpg" class="colecimg22 m-0"></a>
+      </div>
+    </div>
+  </div><br><br><br><br>
+
+<!--testimonials-->
+  <h2 class="text-center pt-3">TESTIMONIALS</h2><br><br>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <div class="">
+          <img src="img/blog1.jpg" class="bd-placeholder-img rounded-circle shadow  p-1 mb-5 bg-body rounded"  width="180" height="160">
+          <h2 class="fw-normal">walter white</h2>
+          <p>Some representative placeholder content for the three columns </p>
+          <button type="button" class="btn btn2 opacity-75">Read more </button>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <div class="">
+          <img src="img/blog1.jpg" class="bd-placeholder-img rounded-circle shadow  p-1 mb-5 bg-body rounded"  width="180" height="160">
+          <h2 class="fw-normal">clay Jensen</h2>
+          <p>Some representative placeholder content for the three columns </p>
+          <button type="button" class="btn btn2 opacity-75">Read more </button>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <div class="">
+          <img src="img/blog1.jpg" class="bd-placeholder-img rounded-circle shadow  p-1 mb-5 bg-body rounded"  width="180" height="160">
+          <h2 class="fw-normal">alvaro norte</h2>
+          <p>Some representative placeholder content for the three columns </p>
+          <button type="button" class="btn btn2 opacity-75">Read more </button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><br><br><br><br><br>
+
+  <!--brand names-->
+  <div class="container text-center mw-100">
+    <div class="row row-cols-4">
+      <div class="col"><a href="#"><img src="img/scroll1.png" class=" acrolimg" alt="scroll"></a></div>
+      <div class="col"><a href="#"><img src="img/scroll2.png" class=" acrolimg" alt="scroll"></a></div>
+      <div class="col"><a href="#"><img src="img/scroll3.png" class=" acrolimg" alt="scroll"></a></div>
+      <div class="col"><a href="#"><img src="img/scroll4.png" class=" acrolimg" alt="scroll"></a></div>
+    </div>
+  </div><br><br><br><br>
+<!--about policy-->
+  <div class="container text-center mw-100">
+    <div class="row w-100">
+      <div class="col-12 policy">
+        <a href="#" class=""><i class="icofont-cart-alt"></i><span class="freeshiping">FREE SHIPPING</span></a>
+        <p class="prepaidorder">free shipping on prepaid order</p>
+      </div>
+      <div class="col-12 policy pt-4">
+        <a href="tel:6352021838" class=""><i class="icofont-ui-call"></i><span class="freeshiping">CALL TOLL FREE</span></a>
+        <p class="prepaidorder">call for customer support</p>
+      </div>
+    </div>
+  </div><br><br><br>
+
+  <!--footer-->
+  <div class="container mw-100 text-center bg-f">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col">
+          <h6>INFORMATION</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">about us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">contact us</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6>MY ACCOUNT</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My Account</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Order History</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Specials</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Brands</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">help</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h6>INFORMATION</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">about us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="row justify-content-md-center pt-5">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-md-auto">
+          <form>
+            <h5>Get in touch with us</h5>
+            <p>updating you with new Products</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="col col-lg-2">
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <div class="container">
+          <h1 class="text-center fw-bolder"><a href="#" class="linkfooter">CLICK SHOP</a></h1>
+          <P CLASS="text-center p-1 sizingg">
+            <a href="#" class="linkfooter"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkfooter"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="linkfooter"><i class="bi bi-twitter"></i></a>
+          </P>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
